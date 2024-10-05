@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text color for better readability */
+}
+
+header {
+    background-color: #004080; /* Dark blue */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #002040; /* Deeper blue for navigation */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease; /* Transition effect for hover */
+}
+
+nav ul li a:hover {
+    background-color: #00509e; /* Lighter blue on hover */
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: white; /* White background for sections */
+    max-width: 800px; /* Limit the width of sections */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    opacity: 0; /* Start as invisible for fade-in */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for fade-in */
+}
+
+/* Fade-in effect for sections when they come into view */
+.fade-in {
+    opacity: 1;
+}
+
+/* Animation for the footer */
+footer {
+    background-color: #004080; /* Dark blue */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animation for the footer */
+footer {
+    animation: fadeIn 0.5s ease; /* Fade-in animation */
+}
+
+/* Optional: Add hover effect to sections */
+section:hover {
+    transform: scale(1.02); /* Slightly enlarge the section on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation links on smaller screens */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin for vertical spacing */
+    }
+
+    section {
+        margin: 10px; /* Adjust margins for smaller screens */
+    }
+}
